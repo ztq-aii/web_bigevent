@@ -33,7 +33,7 @@ $('#form_reg').on('submit', function (e) {
   var data = $(this).serialize()
   // 使用ajax提交数据
   $.ajax({
-    url: 'http://api-breakingnews-web.itheima.net/api/reguser',
+    url: '/api/reguser',
     method: 'post',
     data: data,
     success: function (res) {
@@ -53,7 +53,7 @@ $('#form_login').on('submit', function (e) {
   e.preventDefault();
   var data = $(this).serialize()
   $.ajax({
-    url: 'http://api-breakingnews-web.itheima.net/api/login',
+    url: '/api/login',
     method: 'post',
     data: data,
     success: function (res) {
